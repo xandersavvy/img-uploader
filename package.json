@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jotai": "^2.2.2"
+  }
+}
