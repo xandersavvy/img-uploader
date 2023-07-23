@@ -53,7 +53,7 @@ public class ImageUploaderApplication {
 	@ExceptionHandler(IOException.class)
 	public ResponseEntity<Boolean> storeImage(@RequestBody MultipartFile image) throws IOException {
 		try {
-			String path = "../Frontend/images";
+			String path = "../images";
 			Files.write(Paths.get(path+File.separator+image.getOriginalFilename()),image.getBytes());
 			imageService.StoreImage(image.getOriginalFilename());
 			return new ResponseEntity<>(true, HttpStatus.OK);
