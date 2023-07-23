@@ -8,7 +8,7 @@ import ImageList from './image-comp/ImageList'
 function App() {
   const [smComp,setSmComp] = useState(true);
   return (<>
-  <button className='m-4 p-4 top-1' onClick={()=>setSmComp(smComp=>!smComp)}>Toggle</button>
+  <button className='m-4 p-4 top-1 bg-slate-400 hover:blur-2' onClick={()=>setSmComp(smComp=>!smComp)}>Toggle</button>
   {smComp?<ImageComp/>:<ImageList />}
   </>
   )

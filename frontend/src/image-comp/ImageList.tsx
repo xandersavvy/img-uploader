@@ -13,6 +13,6 @@ export default function ImageList() {
     }, [])
 
     return (<div className="grid grid-cols-4">{
-        data.map((item,key) => <img src={`../../../images/${item.image}`} key={key} className="w-36 p-2 m-2"/>)
+        data.map((item,key) => <img src={`../../../images/${item.image}`} key={key} className="w-42 h-36 p-2 m-2"/>)
     }</div>)
 }
